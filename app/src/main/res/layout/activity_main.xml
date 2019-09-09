@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lyvela"
+        android:gravity="center">
+
+        <com.felipecsl.gifimageview.library.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="234dp"
+            android:layout_height="500dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="234dp"
+            android:layout_height="500dp"
+            android:background="@drawable/velapng"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Encender Vela"
+            android:background="#fff"
+            android:onClick="encendervela"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
